@@ -8,5 +8,6 @@ import java.util.Properties;
 public class Utils {
 
     public static final String homePage = "https://www.epiesa.ro/";
+    public static final String loginPage = "https://www.epiesa.ro/autentificare-epiesa/";
 
 }

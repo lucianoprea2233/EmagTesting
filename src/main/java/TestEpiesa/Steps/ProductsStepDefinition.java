@@ -1,7 +1,12 @@
 package TestEpiesa.Steps;
 
 import TestEpiesa.Pages.ProductsPageObject;
+import TestEpiesa.Utils.Screenshot;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.junit.After;
 
 public class ProductsStepDefinition {
 
@@ -9,8 +14,22 @@ public class ProductsStepDefinition {
 
 
 
-    @Given("I'm on HomePage")
-    public void iMOnHomePage() {
+
+    @Then("I enter on Laptops Tab")
+    public void iEnterOnLaptopsTab() {
+        productsPageObject.enteringLaptoptsTab();
+
+    }
+
+    @Then("I search for {string}")
+    public void iSearchFor(String arg0) {
+
+        productsPageObject.balansoarGradinaSearch();
+    }
+
+    @Then("I sort by {string} Brand and {string} Processor")
+    public void iSortByBrandAndProcessor(String arg0, String arg1) {
+        productsPageObject.sortByBrandAndProcessor();
     }
 
 
