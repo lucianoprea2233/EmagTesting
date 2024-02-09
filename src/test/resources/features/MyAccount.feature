@@ -1,7 +1,7 @@
 Feature: Login into the Book Panel staging page
 
 
- Scenario: Login with valid credentials into Epiesa Account
+  Scenario: Login with valid credentials into Epiesa Account
     Given I'm landing on the homepage
     Then  I am on my account button
     And   I click on "Intra in cont"
@@ -35,22 +35,22 @@ Feature: Login into the Book Panel staging page
     Then I choose My Car with my car specifics WITH VIN
 
 
-    Scenario: I want to delete my car
-      Given I'm on login page
-      Then I enter my account email and password and click on "Autentificare"
-      Then I am on My Cars Tab
-      Then I delete my car if it exists
+  Scenario: I want to delete my car
+    Given I'm on login page
+    Then I enter my account email and password and click on "Autentificare"
+    Then I am on My Cars Tab
+    Then I delete my car if it exists
 
 
-    Scenario: I want to enter the Auto Parts for MY CAR from MY CAR TAB
-      Given I'm on login page
-      Then I enter my account email and password and click on "Autentificare"
-      Then I am on My Cars Tab
-      Then I click on "Lista Piese" for Dacia Logan that i just added
+  Scenario: I want to enter the Auto Parts for MY CAR from MY CAR TAB
+    Given I'm on login page
+    Then I enter my account email and password and click on "Autentificare"
+    Then I am on My Cars Tab
+    Then I click on "Lista Piese" for Dacia Logan that i just added
 
 
-    Scenario: I want to logout from the account
-      Given I'm on login page
-      Then I enter my account email and password and click on "Autentificare"
-      And  I am on my account button
-      Then I logout of my account
+  Scenario: I want to logout from the account
+    Given I'm on login page
+    Then I enter my account email and password and click on "Autentificare"
+    And  I am on my account button
+    Then I logout of my account
