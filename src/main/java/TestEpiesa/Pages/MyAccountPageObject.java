@@ -28,7 +28,6 @@ public class MyAccountPageObject extends BasePage {
     private WebElement enterAccountButton;
     @FindBy(xpath = "//input[@name='login_utilizator']")
     private WebElement emailField;
-
     @FindBy(name = "login_parola")
     private WebElement passwordField;
     @FindBy(xpath = "//div[@class='sub-pro-btn mrb-20 button-with-arrow']//button[@type='submit']")
@@ -41,8 +40,6 @@ public class MyAccountPageObject extends BasePage {
     private WebElement itHardwareDomain;
     @FindBy(xpath = "//button[normalize-space()='ACTUALIZEAZA']")
     private WebElement updateEditProfileButton;
-  //  @FindBy(xpath = "//input[@name='data_nastere']")
-  //  private WebElement birthDateButton;
     @FindBy (xpath = "//input[@name='data_nastere']")
     private WebElement birthDateButton;
     @FindBy(xpath = "//div[@class='nav-item dropdown']//a[@title='masinile mele']")
