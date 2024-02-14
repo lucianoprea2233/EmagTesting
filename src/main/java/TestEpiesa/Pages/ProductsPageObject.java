@@ -41,7 +41,7 @@ public class ProductsPageObject extends BasePage {
     @FindBy(xpath = "//button[@onclick=\"document.getElementById('adauga_piesa_cos_112125').submit();\"]")
     private WebElement addInCart;
     @FindBy(xpath = "//div[@class=\"btn-group ml-20\"]//a[@title=\"cos cumparaturi epiesa.ro\"]")
-    private WebElement cartButton;
+    public WebElement cartButton;
     @FindBy(xpath = "//div[@class=\"cumparaturi-text\"]//p[contains(text(),'Laptop ASUS X1502ZA-BQ549, procesor Intel Core i3,')]")
     private WebElement isElementInCart;
     @FindBy(xpath = "//span[@class='plus']")
@@ -193,7 +193,7 @@ public class ProductsPageObject extends BasePage {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-        // tyreSeasonFilter.click();
+
         summerTyresFilter = wait.until(ExpectedConditions.elementToBeClickable(summerTyresFilter));
         try {
             summerTyresFilter.click();
